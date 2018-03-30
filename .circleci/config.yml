@@ -1,7 +1,7 @@
 ---
 defaults: &defaults
   docker:
-    - image: 'circleci/golang:1.9.4'
+    - image: 'circleci/golang:1.9.5'
   working_directory: '/go/src/github.com/influxdata/telegraf'
 version: 2
 jobs:
@@ -42,7 +42,7 @@ workflows:
             - 'build'
     triggers:
       - schedule:
-          cron: "0 18 * * *"
+          cron: "0 7 * * *"
           filters:
             branches:
               only:
