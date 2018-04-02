@@ -9,7 +9,7 @@ jobs:
     <<: *defaults
     steps:
       - checkout
-      - run: 'make ci-test'
+      - run: 'make test-all'
   release:
     <<: *defaults
     steps:
